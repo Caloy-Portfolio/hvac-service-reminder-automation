@@ -36,7 +36,7 @@ A scheduled AppsScript runs every morning and performs the following steps:
 
 ## Workflow
 
- <img alt="Workflow" src="[https://img.shields.io/github/license/bdcorps/candymail](https://github.com/Caloy-Portfolio/hvac-service-reminder-automation/blob/main/emailoutput.png)"/>
+ <img alt="Workflow" src="[https://github.com/Caloy-Portfolio/hvac-service-reminder-automation/blob/main/emailoutput.png]"/>
 
 
 ---
