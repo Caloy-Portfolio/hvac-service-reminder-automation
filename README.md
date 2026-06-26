@@ -65,7 +65,7 @@ A scheduled AppsScript runs every morning and performs the following steps:
 | Status             | Pending, Completed or Cancelled                   |
 | Action             | Send Reminder or OVERDUE                          |
 
- ![Google Sheet](/screenshots/google-sheets.png)
+ ![Google Sheet](/screenshots/google-sheet.png)
 
 ---
 
