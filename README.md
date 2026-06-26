@@ -85,7 +85,7 @@ After a reminder email is successfully sent, the automation records the current 
 
 ## Example Reminder Email
 
-![Service Register](hvac-service-reminder-automation/emailoutput.png)
+![Service Register](emailoutput.png)
 
 ---
 
