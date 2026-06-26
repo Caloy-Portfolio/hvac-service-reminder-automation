@@ -49,7 +49,7 @@ A scheduled AppsScript runs every morning and performs the following steps:
 
 ---
 
-## Excel Data Structure
+## Sheet Data Structure
 
 | Column             | Description                                       |
 | ------------------ | ------------------------------------------------- |
@@ -65,7 +65,7 @@ A scheduled AppsScript runs every morning and performs the following steps:
 | Status             | Pending, Completed or Cancelled                   |
 | Action             | Send Reminder or OVERDUE                          |
 
- ![Workflow](/screenshots/excel sheets.png)
+ ![Google Sheet](/screenshots/google-sheets.png)
 
 ---
 
@@ -86,7 +86,13 @@ After a reminder email is successfully sent, the automation records the current 
 
 ## Example Reminder Email
 
-![Service Register](emailoutput.png)
+![Service Register](/screenshots/emailoutput.png)
+
+---
+
+## Run History
+
+![Run History](/screenshots/run-history.png)
 
 ---
 
