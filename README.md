@@ -2,82 +2,52 @@
 
 ## Project Overview
 
-This project automates preventive maintenance reminders for HVAC service schedules using Microsoft Power Automate and Microsoft Excel Online.
+This project automates preventive maintenance reminders for HVAC service schedules using Google Sheets and AppsScript, to be ported into Google Excel Online and Power Automate if necessary.
 
-The solution replaces a manual daily process of checking spreadsheets for upcoming service dates by automatically identifying services that require attention, emailing a reminder report, and recording when reminders were sent.
+The solution makes it convenient for the business owner to keep track of all active service by reading the email instead of checking the sheet on a daily basis. 
 
-This project was built as part of my portfolio to demonstrate practical business process automation using Microsoft 365.
+This project was built as part of my portfolio to demonstrate practical business process automation.
 
 ---
 
 ## Business Problem
 
-Service coordinators were manually reviewing service schedules every morning to identify upcoming preventive maintenance visits.
+Service coordinators are using this sheet to update service schedules every day to identify upcoming preventive maintenance visits, meaning the owner of the business will need to open the sheet every day to ensure that all services are done in a timely manner.
 
-This manual process introduced several challenges:
+This process proved to be repetitive for the business owner and wanted a more streamlined process of getting updates from the sheet.
 
-* Time spent reviewing spreadsheets every day
-* Risk of missing upcoming service dates
-* No automatic record of reminder emails
-* Difficult to identify overdue services quickly
-* Inconsistent follow-up between coordinators
-
-The goal of this project was to automate the reminder process while keeping the existing Excel-based workflow familiar to users.
+The goal of this project was to automate the updates while keeping the existing sheets-based workflow familiar to users.
 
 ---
 
 ## Solution
 
-A scheduled Power Automate cloud flow runs every morning and performs the following steps:
+A scheduled AppsScript runs every morning and performs the following steps:
 
-1. Read the service register stored in Excel Online.
+1. Read the service register stored in Google Sheets.
 2. Retrieve every active service requirement.
 3. Ignore completed and cancelled jobs.
-4. Check whether the next service date falls within the configured reminder window.
+4. Check whether the next service date falls within the reminder window.
 5. Identify overdue services.
 6. Generate a reminder email summarizing upcoming and overdue work.
-7. Update the "Last Reminder Sent" field for reminder records.
+7. Update the "Last Reminder Sent" field for reminder records still active.
 
 ---
 
 ## Workflow
 
 ```
-Daily Scheduled Trigger
-          │
-          ▼
-Read Excel Service Register
-          │
-          ▼
-Filter Active Services
-          │
-          ▼
-Check Due Dates
-          │
-     ┌────┴─────┐
-     │          │
-Upcoming    Overdue
-     │          │
-     └────┬─────┘
-          ▼
-Build Reminder Email
-          │
-          ▼
-Send Outlook Email
-          │
-          ▼
-Update Last Reminder Sent
+<img width="224" height="943" alt="Untitled drawing" src="https://github.com/user-attachments/assets/b7ab5231-f9e7-4a68-b17e-3d56e7af6d87" />
+
 ```
 
 ---
 
 ## Technologies Used
 
-* Microsoft Excel Online
-* Microsoft Power Automate
-* Microsoft Outlook
-* OneDrive / SharePoint
-* Google Apps Script (initial prototype)
+* Google Sheets
+* Google Apps Script
+* Gmail
 * GitHub
 
 ---
@@ -96,6 +66,7 @@ Update Last Reminder Sent
 | Active             | Indicates whether reminders are enabled           |
 | Last Reminder Sent | Automatically updated after reminder email        |
 | Status             | Pending, Completed or Cancelled                   |
+| Action             | Send Reminder or OVERDUE                          |
 
 ---
 
@@ -117,27 +88,7 @@ After a reminder email is successfully sent, the automation records the current 
 ## Example Reminder Email
 
 ```
-HVAC Daily Service Reminder Report
-
-OVERDUE SERVICES
-
-Client: ABC Manufacturing
-Site: Makati Plant
-Service Type: Major
-Due Date: 20-Jun-2026
-
-------------------------------------
-
-SERVICES REQUIRING REMINDERS
-
-Client: XYZ Office Tower
-Site: BGC
-Service Type: Minor
-Due Date: 30-Jun-2026
-
-------------------------------------
-
-Please review and schedule accordingly.
+<img width="260" height="733" alt="Screenshot 2026-06-26 180655" src="https://github.com/user-attachments/assets/294b880f-ce99-45a1-9801-81e761e87712" />
 
 ```
 
@@ -146,12 +97,12 @@ Please review and schedule accordingly.
 ## Skills Demonstrated
 
 * Business Process Automation
-* Microsoft Power Automate
-* Microsoft Excel Online
+* AI-Assisted AppScript Coding
+* Google Sheets
 * Workflow Design
 * Process Documentation
 * Data Validation
-* Scheduled Cloud Flows
+* Scheduled Automations
 * Conditional Logic
 * Email Automation
 * Spreadsheet Automation
@@ -185,7 +136,3 @@ Key takeaways include:
 * Documenting technical solutions for future maintenance
 
 ---
-
-## License
-
-This project is provided for educational and portfolio purposes.
