@@ -37,7 +37,7 @@ A scheduled AppsScript runs every morning and performs the following steps:
 ## Workflow
 
 ```
-<img width="224" height="943" alt="Untitled drawing" src="https://github.com/user-attachments/assets/b7ab5231-f9e7-4a68-b17e-3d56e7af6d87" />
+![Workflow](workflow.png)
 
 ```
 
@@ -88,7 +88,7 @@ After a reminder email is successfully sent, the automation records the current 
 ## Example Reminder Email
 
 ```
-<img width="260" height="733" alt="Screenshot 2026-06-26 180655" src="https://github.com/user-attachments/assets/294b880f-ce99-45a1-9801-81e761e87712" />
+![Excel Service Register](emiloutput.png)
 
 ```
 
