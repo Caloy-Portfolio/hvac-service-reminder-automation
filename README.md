@@ -37,7 +37,7 @@ A scheduled AppsScript runs every morning and performs the following steps:
 ## Workflow
 
 ```
-![Workflow](hvac-service-reminder-automation/blob/main/emailoutput.png)
+![Workflow](hvac-service-reminder-automation/emailoutput.png)
 
 ```
 
@@ -88,7 +88,7 @@ After a reminder email is successfully sent, the automation records the current 
 ## Example Reminder Email
 
 ```
-![Service Register](hvac-service-reminder-automation/blob/main/emailoutput.png)
+![Service Register](hvac-service-reminder-automation/emailoutput.png)
 
 ```
 
