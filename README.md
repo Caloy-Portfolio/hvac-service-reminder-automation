@@ -138,36 +138,7 @@ Due Date: 30-Jun-2026
 ------------------------------------
 
 Please review and schedule accordingly.
-```
 
----
-
-## Repository Structure
-
-```
-/
-│
-├── README.md
-├── excel/
-│     ├── HVAC_Service_Register_Template.xlsx
-│     └── Sample_Data.xlsx
-│
-├── power-automate/
-│     ├── Flow_Screenshot.png
-│     └── Flow_Export.zip
-│
-├── apps-script/
-│     └── sendServiceReminders.js
-│
-├── screenshots/
-│     ├── Excel_Register.png
-│     ├── Reminder_Email.png
-│     ├── PowerAutomate_Run.png
-│     └── Flow_Overview.png
-│
-└── docs/
-      ├── Business_Requirements.md
-      └── Workflow.md
 ```
 
 ---
