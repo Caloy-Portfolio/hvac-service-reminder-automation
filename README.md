@@ -13,21 +13,35 @@ Service coordinators were manually checking spreadsheets every morning to identi
 
 Solution:
 Excel Service Register
-        │
-        ▼
-Daily Scheduled Flow
-        │
-        ▼
-Filter Active Jobs
-        │
-        ▼
-Upcoming & Overdue Check
-        │
-        ▼
-Email Reminder
-        │
-        ▼
+          │
+          ▼
+Power Automate Trigger
+          │
+          ▼
+Read Table
+          │
+          ▼
+For Each Service
+          │
+          ▼
+Is Active?
+     │
+     ├──No
+     │
+     └──Yes
+          │
+          ▼
+Is Due?
+          │
+          ▼
+Build Email
+          │
+          ▼
+Send Outlook Email
+          │
+          ▼
 Update Last Reminder Sent
+
 
 Technologies Used:
 Google Sheets
