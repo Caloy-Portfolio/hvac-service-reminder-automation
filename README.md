@@ -36,7 +36,7 @@ A scheduled AppsScript runs every morning and performs the following steps:
 
 ## Workflow
 
- ![Workflow](workflow.png)
+ ![Workflow](/screenshots/workflow.png)
 
 ---
 
@@ -64,6 +64,8 @@ A scheduled AppsScript runs every morning and performs the following steps:
 | Last Reminder Sent | Automatically updated after reminder email        |
 | Status             | Pending, Completed or Cancelled                   |
 | Action             | Send Reminder or OVERDUE                          |
+
+ ![Workflow](/screenshots/excel sheets.png)
 
 ---
 
